@@ -18,7 +18,6 @@ export class TodoDetailsComponent implements OnInit {
     this.item_date=new Date();
     this.todoList=[];
   }
-
   addItem(event){
     this.todoObject={
       id:this.todoList.length+1,
@@ -31,13 +30,9 @@ export class TodoDetailsComponent implements OnInit {
     this.description='';
     event.preventDefault();
   }
-
   deleteItem(index){
     this.todoList.splice(index,1);
-  }
-  
-
+  }  
   ngOnInit(): void {
   }
-
 }
